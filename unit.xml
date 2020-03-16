@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="25.13" tests="12" failures="12">
+  <testsuite name="Root Suite" timestamp="2020-03-15T12:22:46" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Weather app 
+" timestamp="2020-03-15T12:22:46" tests="12" file="/projects/challenge/test/test.js" failures="12" time="25.13">
+    <testcase name="Weather app 
+ should suggest items on typing city name" time="2.184" classname="should suggest items on typing city name">
+      <failure message="javascript error: Cannot read property &apos;innerText&apos; of undefined
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 4.15.0-1044-gke x86_64)" type="JavascriptError"><![CDATA[JavascriptError: javascript error: Cannot read property 'innerText' of undefined
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 4.15.0-1044-gke x86_64)
+    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:546:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:509:13)
+    at doSend.then.response (node_modules/selenium-webdriver/lib/http.js:441:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+From: Task: WebDriver.executeScript()
+    at thenableWebDriverProxy.schedule (node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at thenableWebDriverProxy.executeScript (node_modules/selenium-webdriver/lib/webdriver.js:878:16)
+    at Context.<anonymous> (test/test.js:65:38)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ selecting a suggestion should change the input field value to the selected city&apos;s name" time="1.863" classname="selecting a suggestion should change the input field value to the selected city&apos;s name">
+      <failure message="expected &apos;dall&apos; to equal &apos;Dallas&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'dall' to equal 'Dallas'
+    at Context.<anonymous> (test/test.js:88:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ should add the contents to the selected section on selecting an option" time="1.854" classname="should add the contents to the selected section on selecting an option">
+      <failure message="expected &apos;&apos; to equal &apos;Dallas&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'Dallas'
+    at Context.<anonymous> (test/test.js:107:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ should debounce before making API calls - no result found" time="5.105" classname="should debounce before making API calls - no result found">
+      <failure message="expected &apos;No Info available!&apos; to equal &apos;No results&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'No Info available!' to equal 'No results'
+    at Context.<anonymous> (test/test.js:123:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ should debounce before making API calls - result should have final call results" time="1.107" classname="should debounce before making API calls - result should have final call results">
+      <failure message="expected &apos;No Info available!&apos; to equal &apos;No results&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'No Info available!' to equal 'No results'
+    at Context.<anonymous> (test/test.js:135:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ should show &quot;No results&quot; message if the data is empty" time="1.854" classname="should show &quot;No results&quot; message if the data is empty">
+      <failure message="expected &apos;No Info available!&apos; to equal &apos;No results&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'No Info available!' to equal 'No results'
+    at Context.<anonymous> (test/test.js:174:21)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ should show &quot;No results&quot; message in red color" time="1.843" classname="should show &quot;No results&quot; message in red color">
+      <failure message="expected false to be true" type="AssertionError"><![CDATA[AssertionError: expected false to be true
+    at Context.<anonymous> (test/test.js:192:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ should have a reset button which resets all entries" time="1.918" classname="should have a reset button which resets all entries">
+      <failure message="expected &apos;dall&apos; to equal &apos;&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'dall' to equal ''
+    at Context.<anonymous> (test/test.js:213:33)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ make sure api is hit - test 1" time="1.856" classname="make sure api is hit - test 1">
+      <failure message="expected &apos;No Info available!&apos; to equal &apos;No results&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'No Info available!' to equal 'No results'
+    at Context.<anonymous> (test/test.js:251:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ make sure api is hit - test 2" time="1.848" classname="make sure api is hit - test 2">
+      <failure message="expected &apos;No Info available!&apos; to equal &apos;Koriyama&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'No Info available!' to equal 'Koriyama'
+    at Context.<anonymous> (test/test.js:277:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ make sure api is hit - test 3" time="1.84" classname="make sure api is hit - test 3">
+      <failure message="expected &apos;No Info available!&apos; to equal &apos;Hagen&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'No Info available!' to equal 'Hagen'
+    at Context.<anonymous> (test/test.js:316:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="Weather app 
+ make sure api is hit - test 4" time="1.858" classname="make sure api is hit - test 4">
+      <failure message="expected &apos;No Info available!&apos; to equal &apos;Tabaco&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'No Info available!' to equal 'Tabaco'
+    at Context.<anonymous> (test/test.js:355:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
